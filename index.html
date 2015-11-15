@@ -24,7 +24,8 @@ var map = new mapboxgl.Map({
     maxZoom: 14,
     zoom: 12 // starting zoom,
 });
-map.addControl(new mapboxgl.Navigation({position: 'top-left'})); //map navigation
+map.addControl(new mapboxgl.Navigation({position: 'top-left'}));
+map.dragRotate.disable();
 </script>
 
 </body>
